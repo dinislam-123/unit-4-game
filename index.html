@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <tytle>
+    </tytle>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- this is bootstraps library link -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <Link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
+        <Link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type='text/javascript' src="assets/javascript/game.js"></script>
+    </head>
+    <body>
+        <div class="main-body">
+            <br>
+            <div class="row heading">
+                <h1>CrystalsCollectors!</h1>
+            </div>
+            <br>
+            <div class="row row-2">
+                <p>You will be given a random number at the start of the game</p><br>
+                <p>There are four Crystal below. By click on a Crystal you will be add a specific amount of points to your total score.</p><br>
+                <p>You win the game by matching your total score by matching random number. You loss the game if your total score goes above the random number.</p><br>
+                <p>The value of each crystal is hidden from you until click on it</p><br>
+                <p>Each time when the game starts. the game will change the values of each crystal.</p>
+            </div>
+            <br>
+            <div class="row row-3">
+                <div class="col-sm-4">
+                    <br>
+                    <input type="text"  readonly id="inputNum"/>
+                </div>
+                <div class="col-sm-6">
+                    <br>
+                     <p  >Wins:<input type="text" id="wins" value='0' readonly></p>
+                    <!-- <h>Wins :<p id="win" value="0"></p></h> -->
+                     <br>
+                     <p>losses:<input type="text" id="loss" value='0'readonly></p>
+                     <!-- <h>losses :<p id="loss" value="0"></p></h> -->
+                </div>
+            </div>
+            <br>
+            <div class="row row-sm-6">
+                    <button id="button1"><img  class="btn" src="assets/images/crystal-1.png"></img></button>
+                    <button id="button2"><img class="btn" src="assets/images/crystal-2.png"></img></button>
+                    <button id="button3"><img class="btn" src="assets/images/crystal-3.png"></img></button>
+                    <button id="button4"><img class="btn" src="assets/images/crystal-4.png"></img></button>
+            </div>
+
+            <div class="row-sm-4">
+                <p id="totalscore">Your Total score is :</p>
+                <input type="text" id="totscore" class="totscore" value="0" readonly/>
+            </div>
+       </div>
+       <!-- <script type='text/javascript' src="assets/javascript/game.js"></script> -->
+    </body>
+</html>
