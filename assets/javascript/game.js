@@ -4,7 +4,8 @@ $(document).ready(function()
 {
     function reload()
     {
-        ranNum = Math.floor(Math.random() * 50) + 1;
+        // generate random number in between 19 to 120..
+        ranNum = Math.floor(Math.random() * (120-19)) + 19;
         $('#inputNum').val(ranNum);
         $('.totscore').val('0');
     }
